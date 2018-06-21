@@ -29,7 +29,6 @@ subtotal = price*quantity
    i+=1 
   end
 end 
-binding.pry
 end 
 
 def apply_discount
