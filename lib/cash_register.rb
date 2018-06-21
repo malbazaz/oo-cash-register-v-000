@@ -46,7 +46,6 @@ while i<qty
   i+=1 
 end 
 @total-=@last_item 
-
 end  
 
 def items
