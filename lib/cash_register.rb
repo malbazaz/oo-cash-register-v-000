@@ -21,15 +21,10 @@ def add_item(item_name,price,quantity= 1)
 subtotal = price*quantity
  @total += subtotal
  i=0
- while 
+ while i<quantity 
  @items << item_name 
- elsif quantity>1
-   i=0 
-   while i<quantity
-   @items << item_name 
    i+=1 
   end
-end 
 end 
 
 def apply_discount
