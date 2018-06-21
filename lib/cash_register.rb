@@ -43,8 +43,9 @@ def void_last_transaction
   i=0 
 while i<qty
   @items.pop
-  
-i=0
+  i+=1 
+end 
+@total-=@last_item 
 
 end  
 
