@@ -1,7 +1,7 @@
 require 'pry'
 class CashRegister
 
-attr_accessor :cash_register, :cash_register_with_discount, :total, :discount, :items
+attr_accessor :cash_register, :cash_register_with_discount, :total, :discount, :items; :last_item 
   
 def initialize(discount=0)
 @total = 0
@@ -19,6 +19,8 @@ end
 
 def add_item(item_name,price,quantity= 1)
 subtotal = price*quantity
+@last_item = subtotal 
+@qty=quantity
  @total += subtotal
  i=0
  while i<quantity 
@@ -38,7 +40,12 @@ end
 end 
 
 def void_last_transaction
+  i=0 
+while i<qty
   @items.pop
+  
+i=0
+
 end  
 
 def items
