@@ -20,6 +20,7 @@ end
 def add_item(item_name,price,quantity= 1)
 subtotal = price*quantity
  @total += subtotal
+ i=0
  while 
  @items << item_name 
  elsif quantity>1
